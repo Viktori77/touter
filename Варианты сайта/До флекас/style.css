@@ -1,0 +1,44 @@
+.header_top_links {
+  float: right;
+}
+
+.header_top_links > button {
+  margin-right: 50px;
+}
+
+.header_top_links > a:last-child {
+  margin-left: 50px;
+}
+
+.header_top_links > a:nth-last-child(2) {
+  margin-left: 10px;
+}
+
+.header_botton {
+  display: inline-block;
+  width: 100%;
+}
+
+.header_botton_logo {
+  display: inline-block;
+}
+.header_botton_nav {
+  float: right;
+}
+
+.nav_menu {
+  float: right;
+}
+
+.nav_top > a {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.nav_botton > a {
+  margin-right: 20px;
+}
+
+div {
+  border: 1px solid #000;
+}
