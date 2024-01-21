@@ -34,6 +34,17 @@
   flex-flow: row wrap;
 }
 
+a {
+  color: blue;
+  /* transition: all 1s; */
+}
+a:hover {
+  color: rgb(252, 92, 0);
+}
+
+/* a:visited {
+  color: blueviolet;
+} */
 .header_botton {
   display: flex;
   width: 100%;
@@ -71,11 +82,12 @@
 }
 
 .Info {
-  width: 45%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
 }
+
 /* .article > img {
   width: 450px;
   height: auto;
@@ -143,7 +155,9 @@ h1 {
 p {
   text-align: justify;
 }
-
+/* p {
+  display: flex;
+} */
 /* _________________________ */
 
 /* Programms */
@@ -159,4 +173,74 @@ ol {
     rgba(0, 212, 255, 1) 100%
   );
   /* css gradient */
+}
+
+.btn {
+  background: rgb(131, 14, 14);
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  /* font-family: inherit; */
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* _________________
+For Timesheet */
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.table td:hover {
+  background: rgb(122, 122, 155);
+}
+
+.table tr:nth-child(even) {
+  background: rgb(212, 212, 216);
+}
+/* .table tr:nth-child(odd) {
+  background: rgb(212, 212, 216);
+}  Нечетная строчка*/
+
+.table tr:nth-child(1) {
+  background: rgb(86, 86, 235);
+}
+
+.table td:nth-child(1) {
+  background: rgb(86, 86, 235);
+}
+
+.navbar {
+  background: lightcoral;
+  /* padding: 10px 20px; */
+  margin-bottom: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+  padding: 10px;
+}
+.navbar ul li:hover {
+  background: #ea456e;
+  color: #fff;
+}
+
+.navbar ul li:last-child {
+  margin: 0px;
 }
