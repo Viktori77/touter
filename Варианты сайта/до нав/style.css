@@ -35,9 +35,8 @@
 .links_ss {
   width: 30%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-flow: row wrap;
-  margin-right: 10px;
 }
 
 a {
@@ -51,23 +50,29 @@ a:hover {
 /* a:visited {
   color: blueviolet;
 } */
-.header_top_logo {
-  width: 20%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu {
-  display: none;
-  font-size: 20px;
-  font-family: 'Oswald', sans-serif;
-  color: rgb(255, 72, 0);
-}
-
-.header_botton {
+/* .header_botton {
   display: flex;
   width: 100%;
+  justify-content: space-between; */
+/* } */
+
+.header_botton_logo {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* .header_botton_nav {
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap; */
+/* } */
+
+.nav_top {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 /* div {
@@ -113,12 +118,14 @@ a:hover {
 .Work {
   display: flex;
   flex-flow: column;
-  /* margin-right: 10px; */
+  margin-right: 10px;
   font-family: 'Lobster', sans-serif;
 }
 
 .Work > button {
   width: 20%;
+  font-size: 16px;
+  color: crimson;
 }
 
 .InfoSite {
@@ -143,10 +150,10 @@ label {
   color: crimson;
 } Как эту кнопку отредактировать? */
 
-/* button {
+button {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-} */
+}
 
 h1 {
   /* text-shadow: x y offer collor; */
@@ -185,9 +192,6 @@ ol {
   border: none;
   border-radius: 5%;
   cursor: pointer;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-  font-size: 20px;
   /* font-family: inherit; */
 }
 .btn:hover {
@@ -261,10 +265,6 @@ For Timesheet */
     width: 350px;
     height: auto;
   }
-
-  .menu {
-    display: none;
-  }
 }
 @media screen and (max-width: 739.98px) {
   .header {
@@ -281,33 +281,5 @@ For Timesheet */
     height: auto;
     display: flex;
     justify-content: center;
-  }
-  .menu {
-    display: none;
-  }
-  .links_ss {
-    justify-content: flex-end;
-  }
-  .btn {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-  }
-
-  @media screen and (max-width: 679.98px) {
-    .header_botton {
-      display: none;
-    }
-    .menu {
-      display: flex;
-    }
-  }
-  @media screen and (max-width: 564.98px) {
-    .header_top_links {
-      width: 66%;
-      display: flex;
-      justify-content: space-between;
-      transition: 2s;
-    }
   }
 }
