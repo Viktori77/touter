@@ -180,7 +180,7 @@ ol {
 
 .btn {
   background: rgb(131, 14, 14);
-  padding: 15px 20px;
+  padding: 10px 10px;
   color: #fff;
   border: none;
   border-radius: 5%;
@@ -188,6 +188,7 @@ ol {
   text-align: center;
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
+
   /* font-family: inherit; */
 }
 .btn:hover {
@@ -308,6 +309,15 @@ For Timesheet */
       display: flex;
       justify-content: space-between;
       transition: 2s;
+    }
+    .Work > label {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 499.98px) {
+    .links_ss {
+      font-size: 14px;
     }
   }
 }
