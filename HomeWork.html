@@ -3,42 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css" media="all" />
     <title>HomeWork</title>
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="header_top">
-        <div class="header_botton_logo">
-          <a href="./index.html">
-            <img width="50px" height="50px" src="./Материал/5.png" alt="Logo" />
-          </a>
+        <div class="header_top_logo">
+          <div>
+            <a href="./index.html">
+              <img
+                width="50px"
+                height="50px"
+                src="./Материал/5.png"
+                alt="Logo"
+              />
+            </a>
+          </div>
+          <div class="menu">
+            <li>
+              Меню
+              <div class="submenu">
+                <ul>
+                  <a href="#">Репетитор</a>
+                </ul>
+                <ul>
+                  <a href="./Programms.html">Программы</a>
+                </ul>
+                <ul>
+                  <a href="./timesheet.html">Расписание</a>
+                </ul>
+                <ul>
+                  <a href="#">Библиотека</a>
+                </ul>
+                <ul>
+                  <a href="#">Чат</a>
+                </ul>
+                <ul>
+                  <a href="./HomeWork.html">Домашнее задание</a>
+                </ul>
+                <hr />
+                <ul>
+                  <a href="#">Профиль</a>
+                </ul>
+                <ul>
+                  <a href="#">Поиск</a>
+                </ul>
+                <hr class="menu_ss" />
+                <ul class="menu_ss">
+                  <a href="./Authorization.html">Регистрация</a>
+                </ul>
+                <ul class="menu_ss">
+                  <a href="./Entrance.html">Вход</a>
+                </ul>
+              </div>
+            </li>
+          </div>
         </div>
         <div class="header_top_links">
-          <button>
-            <a href="./Questionnaire.html">Подобрать программу</a>
-          </button>
+          <a href="./Questionnaire.html" class="btn">Подобрать программу</a>
           <div class="links_ss">
             <a href="./Authorization.html">Регистрация</a>
             <a href="./Entrance.html">Вход</a>
           </div>
         </div>
       </div>
-      <div class="header_botton">
+      <nav class="header_botton">
         <a href="#">Репетитор</a>
-        <div class="header_botton_nav">
-          <div class="nav_top">
-            <a href="#">Программы</a>
-            <a href="#">Расписание</a>
-            <a href="#">Библиотека</a>
-            <a href="#">Чат</a>
-            <a href="#">Домашнее задание</a>
-            <a href="#">Профиль</a>
-            <a href="#">Поиск</a>
-          </div>
-        </div>
-      </div>
-    </div>
+        <a href="./Programms.html">Программы</a>
+        <a href="./timesheet.html">Расписание</a>
+        <a href="#">Библиотека</a>
+        <a href="#">Чат</a>
+        <a href="./HomeWork.html">Домашнее задание</a>
+        <a href="#">Профиль</a>
+        <a href="#">Поиск</a>
+      </nav>
+    </header>
     <h3>Загрузите домашнее задание</h3>
     <input
       type="file"

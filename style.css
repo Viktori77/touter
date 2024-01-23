@@ -7,6 +7,7 @@
   display: flex;
   flex-flow: row wrap;
   font-size: 20px;
+  text-align: center;
   /* margin: 10px 10px 200px 10px; */
   /* align-self: self-end; */
   /* align-items: flex-start;
@@ -62,6 +63,14 @@ a:hover {
   font-size: 20px;
   font-family: 'Oswald', sans-serif;
   color: rgb(255, 72, 0);
+}
+.menu ul {
+  font-size: 14px;
+
+  color: rgb(0, 102, 255);
+}
+.menu .menu_ss {
+  display: none;
 }
 
 .header_botton {
@@ -129,7 +138,7 @@ a:hover {
   font-weight: lighter;
 }
 
-label {
+.Work > label {
   font-size: 40px;
   color: blue;
   display: flex;
@@ -189,7 +198,7 @@ ol {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
 
-  /* font-family: inherit; */
+  /* font-family: inherit; шрифт ,который использовался выше*/
 }
 .btn:hover {
   opacity: 0.8;
@@ -300,7 +309,33 @@ For Timesheet */
       display: none;
     }
     .menu {
-      display: flex;
+      display: block;
+    }
+    .submenu {
+      display: none;
+    }
+    .menu:hover {
+      /* color: aqua; */
+      .submenu {
+        display: block;
+        background: #e7bac5;
+        border: 2px solid #003559;
+        border-radius: 2%;
+        position: absolute;
+        left: 0;
+        text-align: right;
+        padding-right: 10px;
+        margin-left: 20px;
+        /* visibility: hidden; не знаю зачем он нужен */
+        /* opacity: 0; */
+
+        width: 150px;
+        transition: 0.6s ease-in-out;
+        /* не проходит почему-то */
+      }
+    }
+    .menu li {
+      list-style-type: none;
     }
   }
   @media screen and (max-width: 564.98px) {
@@ -308,7 +343,6 @@ For Timesheet */
       width: 66%;
       display: flex;
       justify-content: space-between;
-      transition: 2s;
     }
     .Work > label {
       font-size: 16px;
@@ -316,7 +350,23 @@ For Timesheet */
   }
 
   @media screen and (max-width: 499.98px) {
+    .menu .menu_ss {
+      display: flex;
+    }
     .links_ss {
+      display: none;
+    }
+    .header_top_links {
+      width: 30%;
+    }
+    .header_top_logo {
+      width: 50%;
+      justify-content: space-evenly;
+    }
+    .Work > button {
+      width: 30%;
+    }
+    footer {
       font-size: 14px;
     }
   }
