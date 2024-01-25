@@ -64,9 +64,8 @@ a:hover {
   font-family: 'Oswald', sans-serif;
   color: rgb(255, 72, 0);
 }
-.menu ul {
+.submenu {
   font-size: 14px;
-
   color: rgb(0, 102, 255);
 }
 .menu .menu_ss {
@@ -164,7 +163,7 @@ h1 {
   text-transform: uppercase;
 }
 
-p {
+p.Info {
   text-align: justify;
 }
 /* p {
@@ -259,6 +258,12 @@ For Timesheet */
 
 .navbar ul li:last-child {
   margin: 0px;
+}
+
+/* Boodstrap */
+
+.dropdown-item {
+  font-size: 14px;
 }
 
 /* Медиазапросы  */
