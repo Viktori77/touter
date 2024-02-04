@@ -7,14 +7,9 @@
       name="Keywords"
       content="ticher, cours, school, tutor, on-line, homework"
     />
-    <meta
-      name="description"
-      content="Репетитор начальной школы онлайн. Помощь в подготовке к школе и обучение в начальных классах. Курс 3 месяца до школы"
-    />
-
     <link rel="stylesheet" href="./style.css" media="all" />
-    <script src="./app.js" defer></script>
-    <title>РепетиторОнлайн</title>
+    <script src="./appTest.js" defer></script>
+    <title>Test</title>
   </head>
   <body>
     <header class="header">
@@ -47,8 +42,9 @@
                   <a href="#">Библиотека</a>
                 </li>
 
+                <li></li>
                 <li>
-                  <a href="./Chat.html">Чат</a>
+                  <a href="#">Чат</a>
                 </li>
                 <li>
                   <a href="./HomeWork.html">Домашнее задание</a>
@@ -84,76 +80,38 @@
         <a href="./Programms.html">Программы</a>
         <a href="./timesheet.html">Расписание</a>
         <a href="#">Библиотека</a>
-        <a href="./Chat.html">Чат</a>
+        <a href="#">Чат</a>
         <a href="./HomeWork.html">Домашнее задание</a>
         <a href="#">Профиль</a>
         <a href="#">Поиск</a>
       </nav>
     </header>
-    <article class="article">
-      <div class="Info">
-        <h1><a href="./Cours.html">3 месяца до школы</a></h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
-          deserunt aut atque qui facilis repellat inventore quibusdam voluptatem
-          fugit reiciendis eius, dolor dolores, modi incidunt nemo excepturi
-          minima ipsam quisquam!
-        </p>
-        <h3>Цена</h3>
-        <button class="btn">Подать заявку</button>
-      </div>
-      <div class="foto">
-        <img
-          src="./Материал/Kommunikativnyj-podhod.jpeg"
-          alt="3 месяца до школы"
-        />
-      </div>
-    </article>
-    <div class="Blackboard">Классная доска</div>
-    <div class="Work">
-     
-      <label for="WorkingArea">Классная работа</label>
-      <!-- <input
-        type="text"
-        minlength="5"
-        maxlength="200"
-        placeholder="Напишите отзыв или что-нибудь для настроения"
-        id="WorkingArea"
-      /> -->
-      <ul id="list">
-        <!-- <li>
-          <span class="TextBoard">Text</span>
-          <div class="Icon" id="Icons">
-            <span id="BtnRedactor" data-type="Redacted">&#9998;</span>
-            <span id="BtnDelete" data-type="remove">&cross;</span>
-          </div>
-        </li> -->
-      </ul>
+    <ol>
+      Впишите ответы
 
+      <!-- <li>
+        <label for="A">5+8=</label>
+        <input type="text" id="A" value="" placeholder="напиши ответ здесь" />
+      </li>
       <br />
-      
-      <input
-        name="Area"
-        placeholder="Напишите отзыв или что-нибудь для настроения"
-        id="WorkingArea"
-        cols="30"
-        rows="10"
-        value=""
-      ></input>
+      <li>
+        <label for="B">7+6=</label>
+        <input type="number" id="B" value="" placeholder="напиши ответ здесь" />
+      </li>
+      <br />
+      <label for="C">13+12=</label>
+      <li>
+        <input type="number" id="C" value="" placeholder="напиши ответ здесь" />
+      </li>
+      <br /> -->
 
-      <br />
-      <!-- <input type="submit" value="Написать на доске" /> -->
-      <button type="submit" class="btn" id="Board">Написать</button>
-    </div>
-    <footer class="InfoSite">
-      <div class="Contact">
-        <a href="tel:+79042848969">+7904*******</a> <br />
-        <a href="mailto:vika@list.ru">vika@list.ru</a> <br />
-      </div>
-      <div class="Year">2024</div>
-      <div class="Confidence">
-        <a href="#">Согласие</a>
-      </div>
-    </footer>
+      <li>
+        <label for="Primer">14+3=</label>
+        <input id="Primer" placeholder="напиши ответ здесь" value="" />
+      </li>
+    </ol>
+    <button type="submit" class="btn" id="btnPrimer">ответить</button>
+    <br />
+    <p id="MatemResult"></p>
   </body>
 </html>

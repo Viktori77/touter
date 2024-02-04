@@ -13,8 +13,8 @@
     />
 
     <link rel="stylesheet" href="./style.css" media="all" />
-    <script src="./app.js" defer></script>
-    <title>РепетиторОнлайн</title>
+    <script src="./appChat.js" defer></script>
+    <title>Chat</title>
   </head>
   <body>
     <header class="header">
@@ -47,7 +47,7 @@
                   <a href="#">Библиотека</a>
                 </li>
 
-                <li>
+                <li class="ThisPage">
                   <a href="./Chat.html">Чат</a>
                 </li>
                 <li>
@@ -59,6 +59,9 @@
                 </li>
                 <li>
                   <a href="#">Поиск</a>
+                </li>
+                <li>
+                  <div id="NotebookSubMenu">&#128458;</div>
                 </li>
                 <hr class="menu_ss" />
                 <ul class="menu_ss">
@@ -84,76 +87,42 @@
         <a href="./Programms.html">Программы</a>
         <a href="./timesheet.html">Расписание</a>
         <a href="#">Библиотека</a>
-        <a href="./Chat.html">Чат</a>
+        <div class="ThisPage"><a href="./Chat.html">Чат</a></div>
         <a href="./HomeWork.html">Домашнее задание</a>
         <a href="#">Профиль</a>
         <a href="#">Поиск</a>
+        <div id="Note">
+          <div class="IconHover">
+            <div class="IconNotebook">&#128458; Заметки</div>
+            <!-- <div class="NotebookHeader"></div> -->
+          </div>
+          <div id="Notebook">
+            <div class="NotebookTop">
+              <input
+                type="text"
+                id="inputNotebook"
+                placeholder="Напишите заметку"
+                value=""
+              />
+              <div class="btn" id="NotebookCreate">Добавить</div>
+            </div>
+            <hr />
+            <div>
+              <ul class="listNote" id="listNote">
+                <!-- <li>
+                  <div id="TextNotebook">Текст</div>
+
+                  <div class="OptionsNote">
+                    <div class="ready">&#9745;</div>
+                    <!-- &#9989; -->
+                <!-- <div class="delete">&#10062;</div>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
-    <article class="article">
-      <div class="Info">
-        <h1><a href="./Cours.html">3 месяца до школы</a></h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
-          deserunt aut atque qui facilis repellat inventore quibusdam voluptatem
-          fugit reiciendis eius, dolor dolores, modi incidunt nemo excepturi
-          minima ipsam quisquam!
-        </p>
-        <h3>Цена</h3>
-        <button class="btn">Подать заявку</button>
-      </div>
-      <div class="foto">
-        <img
-          src="./Материал/Kommunikativnyj-podhod.jpeg"
-          alt="3 месяца до школы"
-        />
-      </div>
-    </article>
-    <div class="Blackboard">Классная доска</div>
-    <div class="Work">
-     
-      <label for="WorkingArea">Классная работа</label>
-      <!-- <input
-        type="text"
-        minlength="5"
-        maxlength="200"
-        placeholder="Напишите отзыв или что-нибудь для настроения"
-        id="WorkingArea"
-      /> -->
-      <ul id="list">
-        <!-- <li>
-          <span class="TextBoard">Text</span>
-          <div class="Icon" id="Icons">
-            <span id="BtnRedactor" data-type="Redacted">&#9998;</span>
-            <span id="BtnDelete" data-type="remove">&cross;</span>
-          </div>
-        </li> -->
-      </ul>
-
-      <br />
-      
-      <input
-        name="Area"
-        placeholder="Напишите отзыв или что-нибудь для настроения"
-        id="WorkingArea"
-        cols="30"
-        rows="10"
-        value=""
-      ></input>
-
-      <br />
-      <!-- <input type="submit" value="Написать на доске" /> -->
-      <button type="submit" class="btn" id="Board">Написать</button>
-    </div>
-    <footer class="InfoSite">
-      <div class="Contact">
-        <a href="tel:+79042848969">+7904*******</a> <br />
-        <a href="mailto:vika@list.ru">vika@list.ru</a> <br />
-      </div>
-      <div class="Year">2024</div>
-      <div class="Confidence">
-        <a href="#">Согласие</a>
-      </div>
-    </footer>
   </body>
 </html>
