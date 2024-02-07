@@ -11,7 +11,6 @@
       name="description"
       content="Репетитор начальной школы онлайн. Помощь в подготовке к школе и обучение в начальных классах. Курс 3 месяца до школы"
     />
-
     <link rel="stylesheet" href="./style.css" media="all" />
     <script src="./app.js" defer></script>
     <title>РепетиторОнлайн</title>
@@ -46,7 +45,6 @@
                 <li>
                   <a href="#">Библиотека</a>
                 </li>
-
                 <li>
                   <a href="./Chat.html">Чат</a>
                 </li>
@@ -109,41 +107,46 @@
         />
       </div>
     </article>
-    <div class="Blackboard">Классная доска</div>
-    <div class="Work">
-     
-      <label for="WorkingArea">Классная работа</label>
-      <!-- <input
+    <div class="Blackboard">
+      <div class="DataAndTime">
+        <div id="output">12:12:12</div>
+        <!-- <div id="hideBoardDataOptions">&#8286;</div> -->
+        <div class="Btn" id="BtntoggleDate">
+          <button id="time">Время</button>
+          <button id="date">Дата</button>
+          <button id="full">Дата и время</button>
+        </div>
+      </div>
+      <div class="Work">
+        <label for="WorkingArea">Классная работа</label>
+        <!-- <input
         type="text"
         minlength="5"
         maxlength="200"
         placeholder="Напишите отзыв или что-нибудь для настроения"
         id="WorkingArea"
       /> -->
-      <ul id="list">
-        <!-- <li>
+        <ul id="list">
+          <!-- <li>
           <span class="TextBoard">Text</span>
           <div class="Icon" id="Icons">
             <span id="BtnRedactor" data-type="Redacted">&#9998;</span>
             <span id="BtnDelete" data-type="remove">&cross;</span>
           </div>
         </li> -->
-      </ul>
+        </ul>
 
-      <br />
-      
-      <input
-        name="Area"
-        placeholder="Напишите отзыв или что-нибудь для настроения"
-        id="WorkingArea"
-        cols="30"
-        rows="10"
-        value=""
-      ></input>
-
-      <br />
-      <!-- <input type="submit" value="Написать на доске" /> -->
-      <button type="submit" class="btn" id="Board">Написать</button>
+        <br />
+        <input
+          type="text"
+          id="WorkingArea"
+          placeholder="Напишите отзыв или что-нибудь для настроения"
+          value=""
+        />
+        <br />
+        <!-- <input type="submit" value="Написать на доске" /> -->
+        <button type="submit" class="btn" id="Board">Написать</button>
+      </div>
     </div>
     <footer class="InfoSite">
       <div class="Contact">

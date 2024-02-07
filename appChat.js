@@ -61,8 +61,17 @@ function GetNote(note, index) {
       </div>      
     </li>`
 }
+// Нажатие на интер не получается
+// $('#inputNotebook').keyup(function (event) {
+//   if (event.keyCode === 13) {
+//     $('#NotebookCreate').click()
+//   }
+// })
+// $('#NotebookCreate').click(function () {
+//   document.getElementById('listNote').innerHTML = 'Button clicked'
+// })
 
-// Хочу сделать в сабменю клик по иконке Заметок, чтобы открыались заметки
+// ***** Хочу сделать: 1) в сабменю клик по иконке Заметок, чтобы открыались заметки; 2) редактируемое поле при щелчке на текст; 3) перенос правильный; 4) нажатие на Enter
 
 // const NotebookElement = document.getElementById('Notebook')
 // const NotebookSubMenuBtn = document.getElementById('NotebookSubMenu')
@@ -70,3 +79,45 @@ function GetNote(note, index) {
 // NotebookSubMenuBtn.onclick = function () {
 //   NotebookElement.
 // }
+
+const listOfStudent = document.querySelector('#listOfStudent')
+const filterStudents = document.querySelector('#filterStudents')
+let USERS = []
+
+async function start() {
+  try {
+    listOfStudent.innerHTML = 'Loading...'
+    const resp = await fetch('https://jsonplaceholder.typicode.com/users')
+    const data = await resp.json()
+    setTimeout(() => {
+      USERS = data
+      renderStudent(data)
+    }, 2000)
+  } catch (err) {
+    listOfStudent.style.color = 'red'
+    listOfStudents.style.backgroundColor = 'blue'
+    listOfStudent.innerHTML = err.message
+  }
+}
+function renderStudent(users = []) {
+  if (users.length === 0) {
+    listOfStudent.innerHTML = 'No matched users!'
+  } else {
+    const html = users.map(toHTML).join('')
+    listOfStudent.innerHTML = html
+  }
+}
+function toHTML(user) {
+  return `
+  <li id="listOfStudent">${user.name}</li>
+  `
+}
+start()
+
+filterStudents.addEventListener('input', (event) => {
+  const value = event.target.value.toLowerCase()
+  const filteredStudentsUsers = USERS.filter((user) =>
+    user.name.toLowerCase().includes(value)
+  )
+  renderStudent(filteredStudentsUsers)
+})

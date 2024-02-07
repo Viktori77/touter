@@ -70,3 +70,41 @@ function getNoteTemplate(note, index) {
           </div>
         </li>`
 }
+
+let mode = 'date'
+const output = document.getElementById('output')
+const timeBtn = document.getElementById('time')
+const dateBtn = document.getElementById('date')
+const fullBtn = document.getElementById('full')
+
+function bindMode(name) {
+  return function () {
+    mode = name
+    update()
+  }
+}
+
+fullBtn.onclick = bindMode('full')
+dateBtn.onclick = bindMode('date')
+timeBtn.onclick = bindMode('time')
+
+setInterval(update, 1000)
+update()
+
+function update() {
+  output.textContent = format(mode)
+}
+function format(formatMode) {
+  const now = new Date()
+
+  switch (formatMode) {
+    case 'time':
+      return now.toLocaleTimeString()
+    case 'date':
+      return now.toLocaleDateString()
+    case 'full':
+      return now.toLocaleDateString() + '||' + now.toLocaleTimeString() + '||'
+    default:
+      return now.toLocaleTimeString()
+  }
+}

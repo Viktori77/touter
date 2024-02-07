@@ -91,38 +91,51 @@
         <a href="./HomeWork.html">Домашнее задание</a>
         <a href="#">Профиль</a>
         <a href="#">Поиск</a>
-        <div id="Note">
-          <div class="IconHover">
-            <div class="IconNotebook">&#128458; Заметки</div>
-            <!-- <div class="NotebookHeader"></div> -->
-          </div>
-          <div id="Notebook">
-            <div class="NotebookTop">
-              <input
-                type="text"
-                id="inputNotebook"
-                placeholder="Напишите заметку"
-                value=""
-              />
-              <div class="btn" id="NotebookCreate">Добавить</div>
-            </div>
-            <hr />
-            <div>
-              <ul class="listNote" id="listNote">
-                <!-- <li>
-                  <div id="TextNotebook">Текст</div>
-
-                  <div class="OptionsNote">
-                    <div class="ready">&#9745;</div>
-                    <!-- &#9989; -->
-                <!-- <div class="delete">&#10062;</div>
-                  </div>
-                </li> -->
-              </ul>
-            </div>
-          </div>
-        </div>
       </nav>
     </header>
+    <article id="ChatStudents">
+      <div class="ListOfStudents">
+        <h2>Список пользователей</h2>
+        <input
+          type="text"
+          placeholder="Введите имя пользователя"
+          id="filterStudents"
+        />
+        <ul id="listOfStudent">
+          <!-- <li id="listOfStudent">Students</li> -->
+        </ul>
+      </div>
+      <div id="Note">
+        <div class="IconHover">
+          <div class="IconNotebook">&#128458; Заметки</div>
+          <!-- <div class="NotebookHeader"></div> -->
+        </div>
+        <div id="Notebook">
+          <div class="NotebookTop">
+            <input
+              type="text"
+              id="inputNotebook"
+              placeholder="Напишите заметку"
+              value=""
+            />
+            <div class="btn" id="NotebookCreate">Добавить</div>
+          </div>
+          <hr />
+          <div>
+            <ul class="listNote" id="listNote">
+              <!-- <li>
+              <div id="TextNotebook">Текст</div>
+
+              <div class="OptionsNote">
+                <div class="ready">&#9745;</div>
+                <!-- &#9989; -->
+              <!-- <div class="delete">&#10062;</div>
+              </div>
+            </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
   </body>
 </html>
